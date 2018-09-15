@@ -1,95 +1,105 @@
 .CodeMirror-gutter {
-  background-color: #696969;
-  white-space: normal;
-  height: 100%;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: -30px;
+	background-color: #222222;
+	white-space: normal;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: -30px;
 }
 
 .cm-s-starburst .cm-keyword {
-  color: #b66dff;
+	color: #FFCC00;
 }
 
 .cm-s-starburst .cm-atom {
-  color: #fc556c;
+	color: #fc556c;
 }
 
 .cm-s-starburst .cm-number {
-  color: #826baa;
+	color: #828282;
 }
 
 .cm-s-starburst .cm-def {
-  color: #f20095;
+	color: #476bd1;
 }
 
-.cm-s-starburst .cm-variable, .cm-s-starburst .cm-punctuation, .cm-s-starburst .cm-property, .cm-s-starburst .cm-operator {
-  color: #a5ed65
+.cm-s-starburst .cm-punctuation,
+.cm-s-starburst .cm-operator {
+	color: #7CB6DD;
+}
+
+.cm-s-starburst .cm-variable {
+	color: #bbb;
+}
+
+.cm-s-starburst .cm-property {
+	color: #FF006E;
 }
 
 .cm-s-starburst .cm-variable-2 {
-  color: #0055ff;
+	color: #0055ff;
 }
 
-.cm-s-starburst .cm-variable-3, .cm-s-starburst .cm-type {
-  color: #085;
+.cm-s-starburst .cm-variable-3,
+.cm-s-starburst .cm-type {
+	color: #085;
 }
 
 .cm-s-starburst .cm-comment {
-  color: #aaa;
+	color: #aaa;
 }
 
 .cm-s-starburst .cm-string {
-  color: #63b5dc;
+	color: #63b5dc;
 }
 
 .cm-s-starburst .cm-string-2 {
-  color: #f50;
+	color: #f50;
 }
 
 .cm-s-starburst .cm-meta {
-  color: #555;
+	color: #555;
 }
 
 .cm-s-starburst .cm-qualifier {
-  color: #555;
+	color: #555;
 }
 
 .cm-s-starburst .cm-builtin {
-  color: #8e38ff;
+	color: #8e38ff;
 }
 
 .cm-s-starburst .cm-bracket {
-  color: #ff5656;
+	color: #ff5656;
 }
 
 .cm-s-starburst .cm-tag {
-  color: #ff5656;
+	color: #ff5656;
 }
 
 .cm-s-starburst .cm-attribute {
-  color: #0072ff;
+	color: #0072ff;
 }
 
 .cm-s-starburst .cm-hr {
-  color: #999;
+	color: #999;
 }
 
 .cm-s-starburst .cm-link {
-  color: #00c;
+	color: #00c;
 }
 
 .cm-s-starburst .cm-string-error {
-  color: #e00000;
+	color: #e00000;
 }
 
 .cm-s-starburst .cm-error {
-  color: #f00;
+	color: #f00;
 }
 
 .CodeMirror {
-  position: relative;
-  overflow: hidden;
-  background: #2e2e2e;
-  color: #225fc2;
+	position: absolute;
+	overflow: hidden;
+	background: #222222;
+	color: whitesmoke;
 }
