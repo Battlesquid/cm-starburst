@@ -2,42 +2,33 @@
 <html>
 
 <head>
-    <title>cm-starburst</title>
-    <script src="lib/codemirror.js"></script>
-    <script src="lib/javascript.js"></script>
-    <script src="lib/code-blast.js"></script>
-    <link rel="stylesheet" href="lib/codemirror.css">
-    <!-- <link rel="stylesheet" href="lib/starburst.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	<title>cm-Starburst</title>
+
+	<script src="lib/codemirror.js"></script>
+	<script src="lib/javascript.js"></script>
+	<script src="lib/code-blast.js"></script>
+	<script src="lib/closebrackets.js"></script>
+	<script src="lib/matchbrackets.js"></script>
+	<link rel="stylesheet" href="lib/codemirror.css">
+	<link rel="stylesheet" href="lib/starburst.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
 </head>
 
 <body>
-    <section class="hero is-white is-bold">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
-                    .cm-s-starburst
-                </h1>
-                <h2 class="subtitle">
-                    codemirror theme
-                </h2>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <div id="ide"></div>
-    </div>
-    <script>
-        var codeMirror = CodeMirror(document.getElementById("ide"), {
-            theme: "starburst",
-            mode: "javascript",
-            lineNumbers: true,
-            lineWrapping: true,
-            blastCode: {
-                effect: 2
-            }
-        });
-    </script>
+	<div id="ide"></div>
+	<script>
+		var codeMirror = CodeMirror(document.getElementById("ide"), {
+			theme: "starburst",
+			mode: "javascript",
+			lineNumbers: true,
+			lineWrapping: true,
+			blastCode: {
+				effect: 2
+			},
+			autoCloseBrackets: true,
+			matchBrackets: true
+		});
+	</script>
 </body>
 
 </html>
