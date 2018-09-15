@@ -3,9 +3,10 @@
 .CodeMirror {
   /* Set height, width, borders, and global font properties here */
   font-family: monospace;
-  height: 400px;
-  color: #225fc2;
-  border: 1px solid #225fc2;
+  height: 100%;
+  width: 100%;
+  color: whitesmoke;
+  border-left: 5px solid #111111;
   direction: ltr;
 }
 
@@ -45,7 +46,7 @@
 }
 
 .CodeMirror-guttermarker {
-  color: black;
+  color: white;
 }
 
 .CodeMirror-guttermarker-subtle {
@@ -55,7 +56,7 @@
 /* CURSOR */
 
 .CodeMirror-cursor {
-  border-left: 1px solid black;
+  border-left: 5px solid whitesmoke;
   border-right: none;
   width: 0;
 }
@@ -191,7 +192,9 @@
   color: #00f;
 }
 
-.cm-s-default .cm-variable, .cm-s-default .cm-punctuation, .cm-s-default .cm-property, .cm-s-default .cm-operator {}
+.cm-s-default .cm-variable, .cm-s-default .cm-punctuation, .cm-s-default .cm-property, .cm-s-default .cm-operator {
+	color: #00f;
+}
 
 .cm-s-default .cm-variable-2 {
   color: #05a;
@@ -332,6 +335,10 @@
 .cm-s-starburst .cm-error {
   color: #f00;
 }
+.CodeMirror-matchingbracket {
+	  border: 1px solid #aaa;
+  border-radius: 1px;
+}
 
 .CodeMirror-composing {
   border-bottom: 2px solid;
@@ -340,7 +347,8 @@
 /* Default styles for common addons */
 
 div.CodeMirror span.CodeMirror-matchingbracket {
-  color: #0b0;
+  border: 1px solid #aaa;
+  border-radius: 1px;
 }
 
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
